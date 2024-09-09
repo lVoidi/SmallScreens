@@ -158,6 +158,9 @@ class SSD1306_SPI(SSD1306):
 
 
 def main():
+    """
+    Esto es una prueba
+    """
     i2c = I2C(0, sda=Pin(16), scl=Pin(17))
     screen = SSD1306_I2C(128, 64, i2c)
     screen.text("NOT REAL!", 0, 0, 1)
